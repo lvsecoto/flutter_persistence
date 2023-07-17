@@ -1,0 +1,30 @@
+name: persistence
+description: A simple command-line application.
+# version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  persistence_annotation:
+    git:
+      url: git@codeup.aliyun.com:6240585956f85235f7dd77d1/app/persistence_annotation.git
+      ref: 7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b
+
+  path: ^1.8.0
+
+  source_gen: ^1.2.6
+  dart_style: ^2.2.4
+  build_runner: 2.4.0
+  analyzer: ^5.0.0
+  build: ^2.3.1
+
+  dartx: ^1.1.0
+
+  recase: ^4.0.0-nullsafety.0
+
+dev_dependencies:
+  pedantic: ^1.11.1
+    # Not imported in code, but used to constrain `build.yaml` requirements
+  build_config: "1.1.0"

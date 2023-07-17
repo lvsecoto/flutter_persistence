@@ -1,0 +1,35 @@
+targets:
+  $default:
+    builders:
+      common_ui_code_gen:
+        enabled: true
+      source_gen|combining_builder:
+        options:
+          ignore_for_file:
+            - "type=lint"
+
+builders:
+#  code_gen_guide:
+#    import: 'package:code_gen/code_gen.dart'
+#    builder_factories: ['codeGenGuideBuilder']
+#    build_extensions: { '.dart': ['.code_gen_guide.g.dart'] }
+#    auto_apply: root_package
+#    build_to: cache
+#    applies_builders: ["source_gen|combining_builder"]
+
+  code_gen_persistence:
+    import: 'package:common_ui_code_gen/code_gen.dart'
+    builder_factories: ['codeGenPersistenceBuilder']
+    build_extensions: { '.dart': ['code_gen_persistence.g.part'] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+
+#  code_gen_changelog:
+#    import: 'package:code_gen/code_gen.dart'
+#    builder_factories: ['changelogBuilder']
+#    build_extensions: { '$lib$': ['lib\domain\changelog\changelog.gen.dart'] }
+#    auto_apply: root_package
+#    build_to: source
+#    required_inputs:
+#      - ".md"
