@@ -1,7 +1,7 @@
 targets:
   $default:
     builders:
-      common_ui_code_gen:
+      persistence:
         enabled: true
       source_gen|combining_builder:
         options:
@@ -18,7 +18,7 @@ builders:
 #    applies_builders: ["source_gen|combining_builder"]
 
   code_gen_persistence:
-    import: 'package:common_ui_code_gen/code_gen.dart'
+    import: 'package:persistence/code_gen.dart'
     builder_factories: ['codeGenPersistenceBuilder']
     build_extensions: { '.dart': ['code_gen_persistence.g.part'] }
     auto_apply: dependents
