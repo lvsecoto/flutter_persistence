@@ -112,7 +112,7 @@ class PersistenceGenerator
           /// $fieldClassName是List，需要序列化
           $fieldType _decode${fieldName.pascalCase}(String val) {
             try {
-              return (jsonDecode(val) as List<dynamic>?)?.map((it) => it as ${RegExp('<(.+)>').firstMatch(fieldType)!.group(1)}).toList()${field.type.nullabilitySuffix == NullabilitySuffix.question ? '' : ' ?? ${clazz.name}.$fieldName'};
+              return (jsonDecode(val) as List<dynamic>?)?.map((it) => ${RegExp('<(.+)>').firstMatch(fieldType)!.group(1)}.fromJson(it)).toList()${field.type.nullabilitySuffix == NullabilitySuffix.question ? '' : ' ?? ${clazz.name}.$fieldName'};
             } catch (e) {
               return ${clazz.name}.$fieldName;
             }
