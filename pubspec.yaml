@@ -9,7 +9,7 @@ environment:
 dependencies:
   persistence_annotation:
     git:
-      url: git@codeup.aliyun.com:6240585956f85235f7dd77d1/app/persistence_annotation.git
+      url: git@github.com:lvsecoto/flutter_persistence_annotation.git
       ref: 7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b
 
   path: ^1.8.3
