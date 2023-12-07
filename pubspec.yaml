@@ -12,7 +12,7 @@ dependencies:
       url: git@git.sqlce.cn:TreeM/flutter_persistence_annotation.git
       ref: 7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b
 
-  path: ^1.9.0
+  path: ^1.8.3
 
   source_gen: ^1.4.0
   dart_style: ^2.3.4
