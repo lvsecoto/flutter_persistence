@@ -36,7 +36,7 @@ class PersistenceGenerator
       ) {
         // static const 的字段的值作为默认值
 
-        final isEnum = (field.type.element as ClassElement).isDartCoreEnum;
+        final isEnum = field.type.element is EnumElement;
         final isClass =
             !isEnum && (!(field.type.element?.library?.isDartCore ?? false));
 
