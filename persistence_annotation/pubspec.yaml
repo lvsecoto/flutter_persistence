@@ -1,0 +1,10 @@
+name: persistence_annotation
+description: 用build_runner自动生成基于Hive的key-value存储类
+version: 1.0.0
+homepage: https://git.sqlce.cn/TreeM/flutter_persistence
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dev_dependencies:
+  pedantic: ^1.9.0

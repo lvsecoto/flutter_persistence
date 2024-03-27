@@ -1,5 +1,5 @@
 name: persistence
-description: A simple command-line application.
+description: 用build_runner自动生成基于Hive的key-value存储类
 # version: 1.0.0
 # homepage: https://www.example.com
 
@@ -16,7 +16,6 @@ dependencies:
 
   source_gen: ^1.4.0
   dart_style: ^2.3.4
-  build_runner: ^2.4.7
   analyzer: ^6.0.0
   build: ^2.4.1
 
