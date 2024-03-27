@@ -1,0 +1,18 @@
+name: example
+description: A sample command-line application.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.3.1
+
+dependencies:
+  persistence_annotation:
+    path: ../persistence_annotation
+  build_runner: 2.4.8
+  hive: 3.0.0-dev
+  rxdart: 0.27.7
+
+dev_dependencies:
+  persistence:
+    path: ../

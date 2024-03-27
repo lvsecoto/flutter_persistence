@@ -1,22 +1,19 @@
 name: persistence
-description: A simple command-line application.
-# version: 1.0.0
-# homepage: https://www.example.com
+description: 用build_runner自动生成基于Hive的key-value存储类
+version: 0.0.1
+homepage: https://git.sqlce.cn/TreeM/flutter_persistence
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   persistence_annotation:
-    git:
-      url: git@git.sqlce.cn:TreeM/flutter_persistence_annotation.git
-      ref: 7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b
+    path: ./persistence_annotation
 
   path: ^1.8.3
 
   source_gen: ^1.4.0
   dart_style: ^2.3.4
-  build_runner: ^2.4.7
   analyzer: ^6.0.0
   build: ^2.4.1
 
