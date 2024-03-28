@@ -180,9 +180,10 @@ packages:
   persistence_annotation:
     dependency: "direct main"
     description:
-      path: persistence_annotation
-      relative: true
-    source: path
+      name: persistence_annotation
+      sha256: "2146e98faa2cc87c67a5ed347362398783719d58a0dd0a006bb613a67b33fe14"
+      url: "https://git.sqlce.cn/api/packages/TreeM/pub/"
+    source: hosted
     version: "1.0.0"
   pub_semver:
     dependency: transitive
@@ -273,4 +274,4 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=3.0.0 <4.0.0"
+  dart: ">=3.3.0 <4.0.0"

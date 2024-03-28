@@ -8,11 +8,18 @@ environment:
 
 dependencies:
   persistence_annotation:
-    path: ../persistence_annotation
+    hosted: 'https://git.sqlce.cn/api/packages/TreeM/pub'
+    version: ^1.0.0
   build_runner: 2.4.8
   hive: 3.0.0-dev
   rxdart: 0.27.7
 
 dev_dependencies:
+  persistence:
+    path: ../persistence_annotation
+
+dependency_overrides:
+  persistence_annotation:
+    path: ../persistence_annotation
   persistence:
     path: ../
