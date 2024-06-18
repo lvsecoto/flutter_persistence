@@ -180,10 +180,12 @@ packages:
   persistence_annotation:
     dependency: "direct main"
     description:
-      path: persistence_annotation
-      relative: true
-    source: path
-    version: "1.0.0"
+      path: "."
+      ref: "7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b"
+      resolved-ref: "7732f6cfd0a1dcce9e228f30d941bb2a6c3fbe8b"
+      url: "git@github.com:lvsecoto/flutter_persistence_annotation.git"
+    source: git
+    version: "0.0.0"
   pub_semver:
     dependency: transitive
     description:
